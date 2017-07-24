@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  frontv:
+    image: frontv
+    build:
+      context: ./FrontV
+      dockerfile: Dockerfile
