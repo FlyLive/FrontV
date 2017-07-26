@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
+
+import Index from '@/components/Index'
 import Father from '@/components/Props/Father'
 import Route from '@/components/Route/Route'
 import Head from '@/components/Head'
@@ -11,10 +12,10 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: Hello,
+      name: 'Index',
+      component: Index,
       children:[{
-        path:'home',
+        path:'',
         component:Head
       }]
     },
@@ -24,13 +25,9 @@ export default new Router({
       component: Father
     },
     {
-      path:'/route/:params',
+      path:'/route/:id',
       name:'Route',
       component:Route,
-      children:[{
-        path:'',
-        component:Route
-      }]
     }
   ]
 })

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>{{data}}</p>
+        <p>路由参数:{{data}}</p>
     </div>
 </template>
 
@@ -9,12 +9,12 @@ export default {
   name:'Route',
   data:function(){
       return{
-        data:this.$route.params.params
+        data:this.$route.params.id
       }
   },
   watch:{
     '$route' (to, from) {
-        this.data = this.$route.params.params
+        this.data = this.$route.params.id
       }
   }
 }

@@ -1,18 +1,18 @@
 <template>
-  <div class="hello">
+  <div>
     <router-view></router-view>
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
     <input v-model='msg' />
-    <button v-on:click="counter">增加1</button>
+    <Button v-on:click="counter" type="primary">增加1</Button>
     <p>该按钮点击了{{count}}次</p>
-    <a href="/#/Father">到Props</a>
+    <a href="/#/Father">到Father</a>
+    <router-link :to="{name:'Route',params:{id:123}}">转到Route</router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Hello',
+  name: 'Index',
   data: function () {
     return {
       msg: 'Welcome to Your Vue.js App',

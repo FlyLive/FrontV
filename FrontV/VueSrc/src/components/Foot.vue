@@ -1,5 +1,8 @@
 <template>
-  <p>我是foot</p>
+  <div class="layout-copy">
+      <p>2017/7/25 &copy; Powered By FlyLive</p>
+      <p>Looking at <a href="https://github.com/FlyLive/FrontV.git" target="_blank">GitHub</a></p>
+    </div>
 </template>
 
 <<script>
