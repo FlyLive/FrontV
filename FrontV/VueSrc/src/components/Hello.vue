@@ -1,19 +1,19 @@
 <template>
   <div class="hello">
+    <router-view></router-view>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <input v-model='msg' />
     <button v-on:click="counter">增加1</button>
     <p>该按钮点击了{{count}}次</p>
     <a href="/#/Father">到Props</a>
-        <router-view></router-view>
   </div>
 </template>
 
 <script>
 export default {
-  name:'Hello',
-  data:function() {
+  name: 'Hello',
+  data: function () {
     return {
       msg: 'Welcome to Your Vue.js App',
       count: 0

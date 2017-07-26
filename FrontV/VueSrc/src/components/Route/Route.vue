@@ -6,7 +6,7 @@
 
 <<script>
 export default {
-  name:'route',
+  name:'Route',
   data:function(){
       return{
         data:this.$route.params.params

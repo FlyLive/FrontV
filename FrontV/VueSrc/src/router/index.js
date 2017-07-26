@@ -14,7 +14,7 @@ export default new Router({
       name: 'Hello',
       component: Hello,
       children:[{
-        path:'Home',
+        path:'home',
         component:Head
       }]
     },
@@ -26,7 +26,11 @@ export default new Router({
     {
       path:'/route/:params',
       name:'Route',
-      component:Route
+      component:Route,
+      children:[{
+        path:'',
+        component:Route
+      }]
     }
   ]
 })
