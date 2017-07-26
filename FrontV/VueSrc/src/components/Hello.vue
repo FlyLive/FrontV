@@ -6,6 +6,7 @@
     <button v-on:click="counter">增加1</button>
     <p>该按钮点击了{{count}}次</p>
     <a href="/#/Father">到Props</a>
+        <router-view></router-view>
   </div>
 </template>
 

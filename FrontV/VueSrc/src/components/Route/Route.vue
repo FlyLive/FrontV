@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>{{}}</p>
+        <p>{{data}}</p>
     </div>
 </template>
 
@@ -9,12 +9,12 @@ export default {
   name:'route',
   data:function(){
       return{
-        data:s
+        data:this.$route.params.params
       }
   },
   watch:{
-      '$route'(to,from){
-        this.data = from
+    '$route' (to, from) {
+        this.data = this.$route.params.params
       }
   }
 }

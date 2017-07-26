@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import Father from '@/components/Props/Father'
 import Route from '@/components/Route/Route'
+import Head from '@/components/Head'
 
 Vue.use(Router)
 
@@ -11,7 +12,11 @@ export default new Router({
     {
       path: '/',
       name: 'Hello',
-      component: Hello
+      component: Hello,
+      children:[{
+        path:'Home',
+        component:Head
+      }]
     },
     {
       path: '/father',
